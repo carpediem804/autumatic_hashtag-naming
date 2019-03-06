@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>이미지 업로드</title>
+
+    <!-- Bootstrap core CSS -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"></strong>
+    <!-- Custom fonts for this template -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}"></strong>
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/simple-line-icons.css') }}"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli"></strong>
+    <!-- Plugin CSS -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/device-mockups.min.css') }}"></strong>
+    <!-- Custom styles for this template -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/new-age.min.css') }}"></strong>
+  </head>
+
+  <body id="page-top">
+
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">자동 해시태그와 자동 사진 제목 시스템</h1>
+              <form  name="inputimage" action = "http://127.0.0.1:5000/upload" method = "POST" enctype = "multipart/form-data">
+                <input type = "file" name = "file1" class="btn btn-outline btn-xl js-scroll-trigger" <><br><br><br>
+                <input type="submit" value="시작하기">
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../static/js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../static/js/new-age.min.js"></script>
+
+  </body>
+
+</html>

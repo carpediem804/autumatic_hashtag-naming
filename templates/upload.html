@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>결과</title>
+
+    <!-- Bootstrap core CSS -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"></strong>
+    <!-- Custom fonts for this template -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}"></strong>
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/simple-line-icons.css') }}"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli"></strong>
+    <!-- Plugin CSS -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/device-mockups.min.css') }}"></strong>
+    <!-- Custom styles for this template -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/new-age.min.css') }}"></strong>
+  </head>
+
+  <body id="page-top">
+
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+
+              <div class="screen">
+                <h2>당신의    사진</h2>
+                <img src="../static/0001.jpg" width="250" height="350"  class="img-fluid" ><br>
+                <input type = "button" value = "#{{age}}살"> <input type = "button" value = "#{{output_emotion}}"> <input type = "button" value = "#{{gender}}"><br>
+                <input type = "button" value = "#{{face}}"> <input type = "button" value = "#{{first}}"><br>
+                  <br><h2>{{title}}</h2>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../static/js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../static/js/new-age.min.js"></script>
+
+  </body>
+
+</html>

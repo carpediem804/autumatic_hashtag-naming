@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>자동 해시태그 및 제목 완성</title>
+
+    <!-- Bootstrap core CSS -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}"></strong>
+    <!-- Custom fonts for this template -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/font-awesome.min.css') }}"></strong>
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/simple-line-icons.css') }}"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"></strong>
+    <strong><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli"></strong>
+    <!-- Plugin CSS -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/device-mockups.min.css') }}"></strong>
+    <!-- Custom styles for this template -->
+    <strong><link rel="stylesheet" href="{{ url_for('static', filename='css/new-age.min.css') }}"></strong>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Start 여포 </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#introduce">설명</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#features">특징</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#test">시작하기</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+              <h1 class="mb-5">자동 해시태그와 자동 사진 제목 시스템</h1>
+              <a href="#test" class="btn btn-outline btn-xl js-scroll-trigger">시작하기</a>
+            </div>
+          </div>
+          <div class="col-lg-5 my-auto">
+            <div class="device-container">
+              <div class="device-mockup iphone6_plus portrait black">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="../static/img/hash.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="download bg-primary text-center" id="introduce">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <h2 class="section-heading">사진에 자동으로 해쉬태그와 제목 달아주기</h2>
+            <p> 얼굴상, 감정, 첫인상, 나이, 성별 해쉬태그와 해쉬태그 기반으로 제목 달아주기</p>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="image_name" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <h2>Automatic hash tag, Automatic name</h2>
+          <p class="text-muted">시스템의 특징</p>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="device-container">
+              <div class="device-mockup iphone6_plus portrait black">
+                <div class="device">
+                  <div class="screen">
+                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                    <img src="../static/img/hash.jpg" class="img-fluid" alt="">
+                  </div>
+                  <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 my-auto">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-screen-smartphone text-primary"></i>
+                    <h3>얼굴상, 첫인상 해쉬태그</h3>
+                    <p class="text-muted">딥러닝(VGG 11)을 이용하여 얼굴상(고양이상,강아지상,공룡상,조류상,말상,여우상,개구리상)과 첫인상(감정이과한,과묵한,불만많은,사연있는,호감형,화끈한) 해쉬태그 </p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-camera text-primary"></i>
+                    <h3>감정, 나이, 성별 해쉬태그</h3>
+                    <p class="text-muted">Microsoft FACE API를 이용하여 감정(화남,경멸,역겨움,두려움,행복,무표정,슬픔,놀람) 나이(유아기,10대,20대,30~40대,50대), 성별(남,여) 해쉬태그</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-present text-primary"></i>
+                    <h3>자동 제목 완성</h3>
+                    <p class="text-muted">머신러닝(KNN) 기반으로 해쉬태그와 관련있는 사진의 제목 달아주기</p>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="feature-item">
+                    <i class="icon-lock-open text-primary"></i>
+                    <h3>데이터</h3>
+                    <p class="text-muted">크롤링 한 데이터를 haar Cascade를 통해 노이즈와 resize시켜 최종 데이터 만들기</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact bg-primary" id="test">
+      <div class="cta-content">
+        <div class="container">
+          <h2>Automaic Hash Tag.<br>Automatic naming.</h2>
+          <a href="test" class="btn btn-outline btn-xl js-scroll-trigger">시작하기</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </section>
+
+
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2018-1 집중교육. 여포(1조).</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#">민태홍</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">김대현</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#">김기훈</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../static/js/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../static/js/new-age.min.js"></script>
+
+  </body>
+
+</html>
